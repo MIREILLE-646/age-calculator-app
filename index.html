@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Caculator App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="jquery.js"></script>
+</head>
+<body style="background-color: hsl(0, 0%, 94%); overflow:hidden">
+    <div class=" mt-3 py-5" id="div">
+  <div class="container p-5 mx-auto" id="container" style="background:white; width:600px">
+   <form id="Myform">
+    <div class="row mb-3">
+        <!-- first colunm -->
+        <div class="col-4"> 
+            <label for="day" id="Lday" class="text-secondary">DAY</label>   
+            <input type="text"  placeholder="DD" class="form-control shadow-none " id="day" name="day">
+       <p id="error1" class="text-danger" style="font-style: italic; font-size:small" >This field is required</p>
+       <p id="message1" class="text-danger" style="font-style: italic; font-size:small" >Must be a valid day</p>
+        </div>
+       <!-- second colunm -->
+        <div class="col-4">
+            <label for="month" id="Lmonth" class="text-secondary">MONTH</label>   
+            <input type="text" placeholder="MM" class="form-control shadow-none " id="month" name="month">
+            <p id="error2" class="text-danger" style="font-style: italic; font-size:small" >This field is required</p>
+            <p id="message2" class="text-danger" style="font-style: italic; font-size:small" >Must be a valid month</p>
+        </div>
+        <!-- third colunm -->
+        <div class="col-4">
+            <label for="year" id="Lyear" class="text-secondary">YEAR</label>   
+            <input type="text" placeholder="YYYY" class="form-control shadow-none " id="year" name="year">
+            <p id="error3" class="text-danger" style="font-style: italic; font-size:small" >This field is required</p>
+            <p id="message3" class="text-danger" style="font-style: italic; font-size:small" >Must be in the past</p>
+        </div>
+        
+ <!-- ============================================ -->
+    </div>
+    <!-- row ends -->
+
+    <!-- second row -->
+
+    
+    <div class="row no-gutters mb-2">
+    <!-- first colunm -->
+<div class="col-10"><hr></div>
+<button type="submit" class="btn col-1 rounded-circle text-white fs-2" id="submit"><img src="img/icon-arrow.svg" alt="send"></button>
+  </div>      
+  <!-- second row ends -->
+
+<!-- third row starts -->
+<div class="row">
+    <input class="col-2 text color Y" value="--">
+    <div class="col-10 text">Years</div>
+    <input class="col-2 text color M" value="--">
+    <div class="col-10 text">Months</div>
+    <input class="col-2 text color D" value="--">
+    <div class="col-10 text">days</div>
+</div>
+<!-- third row ends -->
+  
+
+</form>
+    </div>
+     </div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
